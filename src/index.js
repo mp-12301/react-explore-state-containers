@@ -5,13 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux'
-import store, { ContextStore } from './store'
+import store from './store/index'
+import { ContextStore } from './store/custom-state-container/store'
+
+// Use redux
+//
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+// Use custom state container 
 
 ReactDOM.render(
   <React.StrictMode>
-  <Provider store={store}>
+    <ContextStore>
       <App />
-  </Provider>
+    </ContextStore>
   </React.StrictMode>,
   document.getElementById('root')
 );

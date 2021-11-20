@@ -4,7 +4,7 @@ function ComponentC() {
   console.log('render componentC')
   return (
     <div className="container">
-      Im component C
+      <h4>Im component C</h4>
     </div>
   );
 }

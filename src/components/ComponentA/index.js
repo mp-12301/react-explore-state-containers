@@ -9,8 +9,8 @@ function ComponentA() {
 
   return (
     <div className="container">
-      Im component A
-      { count }
+      <h4>Im component A</h4>
+      <div>** count: { count }</div>
       <button onClick={increment}>Increment from A</button>
       <button onClick={decrement}>Decrement from A</button>
     </div>

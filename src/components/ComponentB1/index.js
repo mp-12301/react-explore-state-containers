@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useCounter } from '../../../hooks/counter.js'
+import { useCounter } from '../../hooks/counter.js'
 
 function ComponentB1() {
   // const { count, increment, decrement } = useCounter()
@@ -9,7 +9,7 @@ function ComponentB1() {
 
   return (
     <div className="container">
-      Im component B1
+      <h4>Im component B1</h4>
     </div>
   );
 }
